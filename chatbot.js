@@ -1,5 +1,5 @@
 var questionNum = 0;													// keep count of question, used for IF condition.
-var question = '<h1>what is your name?</h1>';				  // first question
+var question = '<h1>Hello! I am Support Bot, KAYA. I have a number of functions. What do you need from me today?</h1>';				  // first question
 
 var output = document.getElementById('output');				// store id="output" in output variable
 output.innerHTML = question;													// ouput first question
@@ -25,6 +25,38 @@ function bot() {
 
 function timedQuestion() {
     output.innerHTML = question;
+}
+
+var optionOne;
+var optionTwo;
+var optionThree;
+function optionOne() {
+  var optionOne = document.getElementById("optionOne");
+  optionOne.remove();
+  var optionTwo = document.getElementById("optionTwo");
+  optionTwo.remove();
+  var optionThree = document.getElementById("optionThree");
+  optionThree.remove();
+  var options = document.getElementById("options");
+  options.remove();
+  output.innerHTML = '<h1>hello ' + input + '</h1>';
+}
+
+function optionTwo() {
+  output.innerHTML = "<h1>Sorry to hear that you're stressed. If you want help destressing, then feel free to look at the self-care section of our website.</h1>";
+}
+
+function optionThree() {
+  var optionOne = document.getElementById("optionOne");
+  optionOne.remove();
+  var optionTwo = document.getElementById("optionTwo");
+  optionTwo.remove();
+  var optionThree = document.getElementById("optionThree");
+  optionThree.remove();
+  var options = document.getElementById("options");
+  options.remove();
+  document.getElementById("input").type = "text";
+  output.innerHTML = "<h1>Okay! I'm open to talk. What is your name?<h1>";
 }
 
 //push enter key (using jquery), to run bot function.
