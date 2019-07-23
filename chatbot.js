@@ -31,15 +31,7 @@ var optionOne;
 var optionTwo;
 var optionThree;
 function optionOne() {
-  var optionOne = document.getElementById("optionOne");
-  optionOne.remove();
-  var optionTwo = document.getElementById("optionTwo");
-  optionTwo.remove();
-  var optionThree = document.getElementById("optionThree");
-  optionThree.remove();
-  var options = document.getElementById("options");
-  options.remove();
-  output.innerHTML = '<h1>hello ' + input + '</h1>';
+  output.innerHTML = "<h1>Please get immediate help if you are in danger. Our resources tab has plenty of hotlines and pages for help if you need it. The national suicide crisis hotline for the U.S. is 1-800-273-8255.</h1>";v
 }
 
 function optionTwo() {
@@ -47,19 +39,24 @@ function optionTwo() {
 }
 
 function optionThree() {
-  var optionOne = document.getElementById("optionOne");
-  optionOne.remove();
-  var optionTwo = document.getElementById("optionTwo");
-  optionTwo.remove();
-  var optionThree = document.getElementById("optionThree");
-  optionThree.remove();
+  document.getElementById("branchOne").style.visibility = "visible";
+  document.getElementById("branchTwo").style.visibility = "visible";
   var options = document.getElementById("options");
   options.remove();
-  document.getElementById("input").type = "text";
-  output.innerHTML = "<h1>Okay! I'm open to talk. What is your name?<h1>";
+  output.innerHTML = "<h1>Would you like to speak to a real person? Or would I be okay?<h1>";
 }
 
-//push enter key (using jquery), to run bot function.
+function branchOne() {
+  output.innerHTML = "<h1>Understood! A website that you can access that will connect you with someone online for help is <a href = 'https://www.7cups.com/'>7cups</a>.<h1>";
+}
+
+function branchTwo() {
+  var branch = document.getElementById("branch");
+  branch.remove();
+  document.getElementById("input").type = "text";
+  output.innerHTML = "<h1>Okay! I'm open to talk. To reintroduce myself, my name is KAYA and I am a support chatbot. What is your name?<h1>";
+}
+
 $(document).keypress(function(e) {
   if (e.which == 13) {
     bot();																						// run bot function when enter key pressed
