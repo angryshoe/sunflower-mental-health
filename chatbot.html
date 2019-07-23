@@ -1,17 +1,17 @@
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="chatbot.css">
-  </head>
-  <body background = "background.jpg"; align = "center">
-    <div class="output" id="output">
-      <style>
-        .output {
-          height: 800px;
-          width: 100%;
-          position: relative;
-        }
-        </style>
-    </div>
+<html>
+<head>
+  <link rel="stylesheet" href="hi.css">
+</head>
+<body background = "background.jpg" background-attachment: fixed align = "center" style = "background-size: 100%">
+<div id="output">
+  <style>
+    .output {
+      height: 600px;
+      width: 80%;
+      position: relative;
+    }
+    </style>
+</div>
 <div class = "options" id = "options">
     <style>
       .options {
@@ -20,19 +20,19 @@
         position: relative;
       }
     </style>
-  <button class = "option" onclick="optionOne()" id = "optionOne">I am in need of help.</button>
-  <button class = "option" onclick="optionTwo()" id = "optionTwo">I'm stressed.</button>
-  <button class = "option" onclick = "optionThree()" id = "optionThree">I want to chat.</button>
+    <button class = "option" onclick="optionOne()" id = "optionOne">I am in need of help.</button>
+    <button class = "option" onclick="optionTwo()" id = "optionTwo">I'm stressed.</button>
+    <button class = "option" onclick = "optionThree()" id = "optionThree">I want to chat.</button>
 </div>
 <div id = "branch">
-  <button class = "option" onclick = "branchOne()" id = "branchOne" style="visibility:hidden">I want to chat with a real person.</button>
-  <button class = "option" onclick = "branchTwo()" id = "branchTwo" style="visibility:hidden">I want to chat with you.</button>
+  <button class = "option" onclick = "branchOne()" id = "branchOne" style="visibility:hidden">Real person.</button>
+  <button class = "option" onclick = "branchTwo()" id = "branchTwo" style="visibility:hidden">Bot.</button>
 </div>
 <div id="container">
     <input type="hidden" id="input" value="">
 </div>
-  </body>
+</body>
 </html>
-
-<script src = "chatbot.js"></script>
+<!-- jquery for enter key press -->
 <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+<script src = "hi.js"></script>

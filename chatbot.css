@@ -11,8 +11,8 @@ h1, p {
 	font-family: sans-serif;
 	text-align: center;
 	color: white;
-	font-size: 70px;
-  margin: 20px auto;
+	font-size: 50px;
+  margin: 5px auto;
 }
 
 
@@ -40,9 +40,10 @@ p {
     background: none;
     border: none;
     height: 80;
-    width: 400px;
+    width: 300px;
     font-size: 30px;
     font-family: 'Abel', sans-serif;
+    margin: 20px;
 }
 
 .option:hover {
