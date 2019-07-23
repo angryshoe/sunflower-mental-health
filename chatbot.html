@@ -1,16 +1,35 @@
 <html lang="en" dir="ltr">
   <head>
-    <script src = "chatbot.js"></script>
     <link rel="stylesheet" href="chatbot.css">
   </head>
-  <body>
-    <div id="output"></div>
-    <script>
-    bot();
-    </script>
+  <body background = "background.jpg"; align = "center">
+    <div class="output" id="output">
+      <style>
+        .output {
+          height: 800px;
+          width: 100%;
+          position: relative;
+        }
+        </style>
+    </div>
+<div class = "options" id = "options">
+    <style>
+      .options {
+        height: 80px;
+        width: 100%;
+        position: relative;
+      }
+    </style>
+  <button class = "option" onclick="optionOne()" id = "optionOne">I am in need of help.</button>
+  <button class = "option" onclick="optionTwo()" id = "optionTwo">I'm stressed.</button>
+  <button class = "option" onclick = "optionThree()" id = "optionThree">I want to chat.</button>
+</div>
 <div id="container">
-    <input type="text" id="input" value="">
+    <input type="hidden" id="input" value="">
 </div>
 <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script src = "chatbot.js"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
