@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" href="chatbot.css">
 </head>
-<body background = "background.jpg" background-attachment: fixed align = "center" style = "background-size: 100%">
+<body background = "background.jpg" background-attachment: fixed align = "center" style = "width: 100%">
 <div id="output">
   <style>
     .output {
@@ -27,6 +27,14 @@
 <div id = "branch">
   <button class = "option" onclick = "branchOne()" id = "branchOne" style="visibility:hidden">Real person.</button>
   <button class = "option" onclick = "branchTwo()" id = "branchTwo" style="visibility:hidden">Bot.</button>
+</div>
+<div class = "thoughts" id = "thoughts">
+  <style>
+    .thoughts{
+      display:none;
+    }
+  </style>
+  <img src = "https://fremont.edu/wp-content/themes/new-fremont/images/horizontal-loading.gif" height = 250>
 </div>
 <div id="container">
     <input type="hidden" id="input" value="">
