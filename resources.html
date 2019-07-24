@@ -34,7 +34,50 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 </style>
+</head>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -74,20 +117,48 @@ body, html {
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Something that sounds good about our website</span><br>
     <span class="w3-large">If you are suffering from a mental illness, it's really important to get the help you need and deserve. Although this website is a great start, please use the following information for reliable and quality help.</span>
 
+    <br>
+
+    <div class="dropdown">
+      <button class="dropbtn w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off" onclick="myFunction()">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#gettinghelp">Getting Help - Hotlines</a>
+        <a href="#hotlines">Hotlines</a>
+        <a href="#anxiety">Anxiety Help</a>
+        <a href="#depression">Depression Help</a>
+        <a href="#eatingdisorders">Eating Disorder Help</a>
+        <a href="#academicpressure">Academic Pressure</a>
+      </div>
+    </div>
+
+    <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
   </div>
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+
 </header>
 
 <!-- About Section -->
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="gettinghelp">
   <h3 class="w3-center">GETTING HELP - Hotlines</h3>
   <p class="w3-center w3-large"><i> The following information belongs to the <a href="http://drughelpline.org/mental-health-hotline/"> National Drug Helpline</a>. Please visit this link to get more information.</i></p>
   <p class="w3-center w3-large"><i><strong>If you are in an emergency/crisis, do not call a hotline. Call 911.</strong></i></p>
@@ -121,19 +192,19 @@ body, html {
       <p class="w3-center w3-large"><strong> National Institute of Mental Health: </strong> Call (800) 273-8255 </p>
       <br>
     </div>
+  </div>
 
-    <div class="w3-row-padding w3-center" style="margin-top:0px">
-      <div class="w3-container" style="padding:50px 16px" id="hotlines">
-        <h3 class="w3-center">HOTLINES</h3>
-        <p class="w3-center w3-large"><strong> National Suicide Prevention Lifeline: </strong> Call (800) 273-8255 </p>
-        <p class="w3-center w3-large"><strong> National Alliance on Mental Illness: </strong> Call (800) 950-6264 </p>
-        <p class="w3-center w3-large"><strong> SAMHSA: National Helpline </strong> Call (800) 662-4357 </p>
-        <p class="w3-center w3-large"><i> *Available 24/7 in English and Spanish </i></p>
-        <p class="w3-center w3-large"><strong> United 211: </strong> Call 211 </p>
-        <p class="w3-center w3-large"><strong> National Institute of Mental Health: </strong> Call (800) 273-8255 </p>
+    <div class="w3-row-padding w3-center" style="margin-top:7px">
+      <div class="w3-container" style="padding:50px 16px" id="anxiety">
+        <h3 class="w3-center">Anxiety</h3>
+        <p class="w3-center w3-large"><i> The following information belongs to the <a href="https://www.nami.org/learn-more/mental-health-conditions/anxiety-disorders"> National Alliance on Mental Illness</a>. Please visit this link to get more information.</i></p>
+        <p class="w3-center w3-large">Anxiety disorder occurs when intense feelings of distress or nervousness begin to interfere with normal everyday activites. The following a few types of anxiety disorders:</p>
+        <p class="w3-center w3-large"><strong>General Anxiety Disorder:</strong> "Chronic, exaggerated worry" that interferes with concentration in common activites.</p>
+        <p class="w3-center w3-large"><strong>Social Anxiety Disorder:</strong> Irrational fear of embarrassment when it comes to social situations, generally leading to difficulty in conversations and isolation.</p>
+        <p class="w3-center w3-large"><strong>Panic Disorder:</strong> Characterized by instense feelings of terror that result in palpitations, chest pain, or shortness of breath.</p>
+        <p class="w3-center w3-large"><strong>Phobias:</strong> Characterized by severe reactions to irrational fears. </p>
         <br>
-      </div>
-
+        <p class="w3-center w3-large">If your anxiety that </p>
   </div>
 
 
