@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,6 +33,12 @@ body, html {
   min-height: 100%;
 }
 
+.bgimg-3 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://cdn.shopify.com/s/files/1/1878/0085/products/diy-paint-by-number-kit-for-adults-on-canvas-ocean-blue-sunset-clean-pbn_530x@2x.jpg?v=1563283767");
+  min-height: 25%;
+}
 
 
 .w3-bar .w3-button {
@@ -135,6 +142,15 @@ body, html {
 
 
 
+
+
+
+
+
+
+
+
+
 .dropdown {
   position: relative;
 
@@ -142,7 +158,7 @@ body, html {
 
 .dropdown-content {
   display: none;
-  position: static;
+  position: relative;
   background-color: #f9f9f9;
   min-width: 750px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -156,7 +172,39 @@ body, html {
 
 
 
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 
@@ -174,44 +222,14 @@ body, html {
 .w3-third img:hover{opacity: 1}
 
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  z-index: 1; /* Sit on top */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
+/* Dropdown for menu */
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
+
+
+
+
 
 </style>
 </head>
@@ -248,12 +266,25 @@ body, html {
   <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
 </nav>
 
+
+
+
+
+
 <!-- Header with full-height image -->
 <header class="bgimg-2 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
 	<span class="w3-jumbo w3-hide-small">Resources</span><br>
 	<span class="w3-xxlarge w3-hide-large w3-hide-medium">Resources</span><br>
 	<span class="w3-large">If you are suffering from a mental illness, it's really important to get the help you need and deserve. Although this website is a great start, please use the following information for reliable and quality help.</span>
+
+<br>
+<br>
+
+
+<div class="main">
+
+
 
 	<br>
 
@@ -270,7 +301,7 @@ body, html {
 
 <div style="float:left">
 <div class="w3-row-padding w3-center" style="margin-top:7px">
-  	<div class="w3-container" style="padding:50px 16px" id="anxiety">
+  	<div class="w3-container" style="padding:50px 16px" id="gettinghelp">
 
 <h3 class="w3-center">How to Get Help - Hotlines</h3>
 <div class="container">
@@ -312,11 +343,11 @@ body, html {
 
 <div style="float:left">
 <div class="w3-row-padding w3-center" style="margin-top:7px">
-  	<div class="w3-container" style="padding:50px 16px" id="anxiety">
+  	<div class="w3-container" style="padding:50px 16px" id="hotlines">
 
 <h3 class="w3-center">Call a Hotline</h3>
 
- <div class="container">
+<div class="container">
  <div class="dropdown">
   <center><span><img src="http://cdn.onlinewebfonts.com/svg/img_198352.png" alt="Avatar" class="image" style="width:10%"></span></center>
   <div class="dropdown-content">
@@ -352,68 +383,85 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="gettinghelp">
   <h3 class="w3-center">Mental Illnesses</h3>
   <p class="w3-center w3-large"> According to MedlinePlus, mental disorders are 'conditions that affect your thinking, feeling, mood, or behavior.' About 1 in 5 adults, or 20%, experience mental illnesses in a given year. This same percentage of teens experience a mental health condition between the ages of 13-18. The prevalence of mental illness in our society has only emphasized the need for mental health awareness. Hover below the following images to see the dangerous mental illnesses affecting teens and adults today. </p>
-
-<div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Anxiety</div>
-        <img id="myBtn" src="https://cdn.shopify.com/s/files/1/1878/0085/products/diy-paint-by-number-kit-for-adults-on-canvas-ocean-blue-sunset-clean-pbn_530x@2x.jpg?v=1563283767" alt="House" style="width:99%">
-        </div>
-        </div>
+</div>
 
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3 class="w3-center">Anxiety</h3>
+<div class="w3-row-padding w3-center" style="margin-top:7px">
+  <div class="w3-container" style="padding:50px 16px" id="anxiety">
+    <h3 class="w3-center" style="color:#1e4f4f; font-size: 40px"><strong>Anxiety</strong></h3>
     	<p class="w3-center w3-large"><i> The following information belongs to the <a href="https://www.nami.org/learn-more/mental-health-conditions/anxiety-disorders"> National Alliance on Mental Illness</a>. Please visit this link to get more information.</i></p>
+          <br>
     	<p class="w3-center w3-large">Anxiety disorder occurs when intense feelings of distress or nervousness begin to interfere with normal everyday activites. The following a few types of anxiety disorders:</p>
     	<p class="w3-center w3-large"><strong>General Anxiety Disorder:</strong> "Chronic, exaggerated worry" that interferes with concentration in common activites.</p>
     	<p class="w3-center w3-large"><strong>Social Anxiety Disorder:</strong> Irrational fear of embarrassment when it comes to social situations, generally leading to difficulty in conversations and isolation.</p>
     	<p class="w3-center w3-large"><strong>Panic Disorder:</strong> Characterized by instense feelings of terror that result in palpitations, chest pain, or shortness of breath.</p>
     	<p class="w3-center w3-large"><strong>Phobias:</strong> Characterized by severe reactions to irrational fears. </p>
+      <p class="w3-center w3-large">18.1% of the population suffers from anxiety in a given year</p>
     	<br>
-    	<p class="w3-center w3-large">If your anxiety begins to interfere with your everyday life, there are treatment options. In addition to psychotherapy, there are medication options, such as antidepressants and anti-anxiety medication. Another option to help
+    	<p class="w3-center w3-large"><strong>Treatment: </strong>If your anxiety begins to interfere with your everyday life, there are treatment options. In addition to psychotherapy, there are medication options, such as antidepressants and anti-anxiety medication. Another option to help
     	relieve anxiety is getting exercise, trying meditation, and eating healthy. Click below to help destress and relieve anxiety on this website!</p>
     	<p><a href="meditation.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Destress with our Self Care section</a></p>
-
   </div>
 </div>
+
+
+<div class="w3-container w3-light-grey" style="padding:20px 16px" id="depression">
+  <div class="w3-container" style="padding:50px 16px" id="depression">
+    <h3 class="w3-center" style="color:#1e4f4f; font-size: 40px"><strong>Depression</strong></h3>
+    	<p class="w3-center w3-large"><i> The following information belongs to the <a href="https://www.psychiatry.org/patients-families/depression/what-is-depression"> Americal Psychiatric Association</a>. Please visit this link to get more information:</i></p>
+    	<p class="w3-center w3-large">Depression occurs when one experiences intense feelings of sadness or lack of interest in once enjoyed activities. <Strong>The following are some symptoms of depression.</strong></p>
+    	<p class="w3-center w3-large">1. Having a depressed mood, feeling worthless or guilty</p>
+    	<p class="w3-center w3-large">2. Changes in appetite</p>
+    	<p class="w3-center w3-large">3. Loss of energy, trouble sleeping</p>
+    	<p class="w3-center w3-large">4. Difficulty thinking, thoughts of death/suicide</p>
+      <br>
+
+      <p class="w3-center w3-large"> <strong> You are not alone: </strong> About 17% of the population will experience depression at least once in their life.</p>
+    	<br>
+    	<p class="w3-center w3-large"><strong>Treatment: </strong>The main treatments for depression are psychotherapy and medication.</p>
+  </div>
 </div>
+
+
+
+
+
+<div class="w3-row-padding w3-center" style="margin-top:7px">
+  <div class="w3-container" style="padding:50px 16px" id="team">
+    <h3 class="w3-center">Academic Pressure</h3>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:20px 16px" id="about">
+  <h3 class="w3-center">Eating Disorders</h3>
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+
+
 
 
 
 
 
 <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
 }
 </script>
 
