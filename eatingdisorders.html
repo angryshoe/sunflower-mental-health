@@ -1,0 +1,121 @@
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <center><h1><i>What is Eating Disorder?</i></h1>
+  <p>Eating Disorder is a serious condition related to eating behaviors that negatively impact health, emotions and the ability to function in important areas of life.</p>
+  <p> Eating disorder often develop in teens and young adults years, but it can develop at other ages.</p>
+  <br>
+  <p>The main cause of eating disorder is focusing too much on weight, body shape and food.</p>
+  <p> Symptoms vary depending on the type of eating disorder.</p></center>
+  <br>
+
+  <center><button id="myBtn">Types of Eating Disorders</button></center>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <center><h3>Anorexia Nervosa</h3></center>
+      <p>This eating disorder is characterized by abnormal low weight or intense fear of gaining weight. People with anorexia try to control their weight and body shape by extreme measure. For example, vomiting after eating and excessive exercise.</p>
+      <center><h3>Bulimia Nervosa</h3></center>
+      <p>People who have Bulimia have frequent episodes of binge eating and purging. They also limit eating during the day which will lead to more binge eating and purging. Basically, people who have this eating disorder will eat a lot in a short amount of time and try to get rid of the gain calories in an unhealthy way. People who have Bulima is probably preoccupied with their weight, shape, and also judged them harshly by their physical flaws.</p>
+      <center><h3>Binge eating disorder</h3></center>
+      <p>People who binge eat eat a lot. People who has this eating disorder eat quickly or eat a lot even if they are not hungry or being uncomfortabely full. After binge eating, they will not purge, but be ashamed of their eating habits. Being ashamed will lead to them eating in secret.</p>
+      <center><h3>Rumination Disorder</h3></center>
+      <p>The person who has Rumination persistently and repeatedly regugitate food after eating, but this eating disorder is not caused by anxoeria or bulimia. Sometimes food is rechewed, reswallowed, or spit out. Some people who has this eating disorder will spit out the food or eat less to avoid vomiting the food. However, this will lead to malnutrient. This is common in infancy. </p>
+      <center><h3>Avoidant/Restrictive food intake Disorder</h3></center>
+      <p>People who has this eating disorder fail to meet their minimum daily nutrient because of three reasons. First, they are not interested in eating. Second, they avoid food with certain characteristics such as color or smell. For the third and the last reason, they avoid eating for fear of choking or for other consequences of eating. This eating disorder's consequences are significant weight loss or failure to gain weight in childhood.</p>
+    </div>
+    </div>
+  <br>
+
+  <center><h2><u>When to get help for yourself or a loved one</u></h2>
+  <p>You should be getting help if you or a loved one is showing these symptoms: </p>
+  <p>Skipping meals or making excuses for not eating</p>
+  <p>eating much more food in a meal or snack than what is considered normal</p>
+  <p>Excessive exercise</p>
+  <p>expressing depression, disgust, shame or guilt about eating habit</p>
+  <p>eating in secret</p></center>
+  <br>
+
+<u><center><h1>Credits</h1></u>
+<p>All of the information displayed on this website comes from Mayo Clinic.</p>
+<button><a href="https://www.mayoclinic.org/diseases-conditions/eating-disorders/symptoms-causes/syc-20353603">Eating Disorder Information</a></button></center>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+
+
+</body>
+</html>
