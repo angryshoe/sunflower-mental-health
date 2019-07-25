@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>W3.CSS Template</title>
-<meta charset="UTF-8">
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="w=th=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet"href="Meditation2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="chatbot.html" class="w3-bar-item w3-button">CHATBOT</a>
+      <a href="meditation.html" class="w3-bar-item w3-button">SELFCARE</a>
+      <a href="resources.html" class="w3-bar-item w3-button">RESOURCES</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 <body>
+  <style>
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: grey;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .fa-user:hover {
+    color: #eee;
+  }
+  </style>
+  </head>
+  <body>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
@@ -38,39 +107,74 @@
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
   <!-- Images (Portfolio) -->
-
-<div class="container">
-  <img src="https://www.aeroclubsocal.org/wp-content/uploads/2018/08/sunset-clouds.jpg"width="900"height="200"align="center">
-  <div class="centered">
-    <h3>Med·i·ta·tion /ˌMedəˈtāSH(ə)n/</h3>
-    <h6>The precise technique for resting the mind and attaining a state of consciousness that is totally different from the normal waking state.</h6>
-  </div>
-</div>
-<br>
 <br>
 <br>
 <div class="container2">
-  <img src="https://cdn0.iconfinder.com/data/icons/miscellaneousness-long-shadow-flat/33/headphone-512.png" alt="Avatar" class="image">
-  <div class="overlay">
-  <a href="#" class="icon">
-    <i class="fa fa-volume-up"></i>
-  </a>
+  <img src="https://media1.tenor.com/images/7e810be50e7861f45bdcf986b4bf9c71/tenor.gif?itemid=8096621"width="900"height="200"align="center">
+  <div class="centered">
+    <h3 style="color:white; width:800px; height:30px;"><b>Med·i·ta·tion /ˌMedəˈtāSH(ə)n/</b></h3>
+    <h5 style="color:white;width:800px;height:30px;">The precise technique for resting the mind and attaining a state of consciousness that is totally different from the normal waking state.</h5>
   </div>
 </div>
-<div class="container3">
-  <img src="https://freeiconshop.com/wp-content/uploads/edd/bulb-flat.png"class="image2">
-  <div class="overlay2">
-    <a href="#"class="icon2">
+<br>
+<br>
+<br>
+
+<div class="row">
+  <br>
+    <h3 style="color:grey;"><b> Positive Energy</b> </h3>
+    <h4 style="color:grey;"> Your mental health depends on your mood, positive messages can help increase your positive mentality!</h4>
+  <div class="container img2 column">
+
+    <img src="http://icons.iconarchive.com/icons/graphicloads/medical-health/256/human-brain-icon.png" alt="Avatar" class="image">
+    <div class="overlay">
+    <a href="trying.html" class="icon" title="User Profile">
       <i class="fa fa-smile-o"></i>
-      </div>
+    </a>
+    </div>
+  </div>
+  <h3 style="color:grey;"><b>Satisfying Videos</b> </h3>
+  <h4 style="color:grey;"> Watch some satisfying videos to quickly improve your mood, great for your mental health!</h4>
+  <div class="container img3 column">
+    <img src="https://www.freeiconspng.com/uploads/video-camera-png-icon-5.png" alt="Avatar" class="image">
+    <div class="overlay">
+    <a href="Video.html" class="icon" title="User Profile">
+      <i class="fa fa-laptop"></i>
+    </a>
+    </div>
+  </div>
+<h3 style="color:grey;"><b>Meditation</b> </h3>
+<h4 style="color:grey;"> Meditation allows the mind to relax. When the mind relaxes, the body comes with it. It's effective to improving your mentality!</h4>
+    <div class="container2 img column">
+      <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-046bd3e42998b058021c1ab30a67e109-earphones.png" alt="Avatar" class="image">
+      <div class="overlay">
+      <a href="Music.html" class="icon">
+        <i class="fa fa-volume-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <!-- <div class="container3 img3 ex2 ">
+      <img src="http://icons.iconarchive.com/icons/graphicloads/medical-health/256/human-brain-icon.png"class="image2">
+      <div class="overlay2">
+        <a href="#"class="icon2">
+          <i class="fa fa-smile-o"></i>
+
+         </div>
 
 
-  <!-- Contact -->
-
-
+          <div class="container4 img2 ex1">
+            <img src="https://www.freeiconspng.com/uploads/video-camera-png-icon-5.png"class="image3">
+            <div class="overlay3">
+              <a href="#"class="icon3">
+                <i class="fa fa-laptop"></i>
+                </div> -->
+      <!-- Contact -->
 
 <!-- End page content -->
 </div>
 
 </body>
+</html>
+
 </html>
