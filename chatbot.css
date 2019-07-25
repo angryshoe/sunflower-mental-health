@@ -32,12 +32,12 @@ p {
 }
 
 .option{
-    color:#cfcfcf;
-		/* #b8e1ff; */
+    color: #edf8ff;
+		/* #87abc4; */
     text-align:center;
     -webkit-transition:all 250ms ease-in-out;
     transition:all 250ms ease-in-out;
-    background: none;
+		background: none;
     border: none;
     height: 80;
     width: 300px;
@@ -45,10 +45,12 @@ p {
     font-family: 'Abel', sans-serif;
     margin: 20px;
 		font-family: 'Architects Daughter', cursive;
+		border: 2px solid white;
 }
 
 .option:hover {
-  background-color: #293842;
+  background-color: #999999;
+	opacity: 0.9;
 }
 
 input {
