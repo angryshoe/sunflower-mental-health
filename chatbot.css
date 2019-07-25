@@ -8,7 +8,7 @@ body {
 }
 
 h1, p {
-	font-family: sans-serif;
+	font-family: 'Maven Pro', sans-serif;
 	color: white;
 	font-size: 50px;
   margin: 5px auto;
@@ -32,7 +32,8 @@ p {
 }
 
 .option{
-    color:#b8e1ff;
+    color:#cfcfcf;
+		/* #b8e1ff; */
     text-align:center;
     -webkit-transition:all 250ms ease-in-out;
     transition:all 250ms ease-in-out;
@@ -43,6 +44,7 @@ p {
     font-size: 30px;
     font-family: 'Abel', sans-serif;
     margin: 20px;
+		font-family: 'Architects Daughter', cursive;
 }
 
 .option:hover {
@@ -146,7 +148,7 @@ body, html {
 
 .headr {
 	height: 90px;
-	background-image: url(http://5b0988e595225.cdn.sohucs.com/images/20190309/0c44797d60774930b69173b5e27a97d7.jpeg);
+	background-image: url(banner.jpg);
 	line-height:70px;
 	width: 95%;
 	text-align: center;
