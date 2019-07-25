@@ -11,7 +11,7 @@ var itBeLikeThat;
 var response;
 var responsesOne = ["<h1>It's never a bad idea to focus on the positive<h1>", "<h1>I'm so glad you're here to talk to m<h1>", "<h1>yeet<h1>"];
 var responsesTwo = ["<h1>Your feelings are valid!<h1>", "<h1>That's pretty interesting!<h1>", "<h1>I'll always be here.<h1>"];
-var responsesThree = ["<h1>Take care of yourself<h1>", "<h1>Wow.<h1>", "<h1>How are you feeling?<h1>"];
+var responsesThree = ["<h1>Take care of yourself<h1>", "<h1>Wow.<h1>", "<h1>How are you feeling?<h1>", "You aren't alone."];
 var lifeCheck;
 var lifeCheckTwo;
 var inputTwo;
