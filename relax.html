@@ -3,17 +3,22 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
+
+a.nounderline{text-decoration: none;}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .topnav {
   overflow: hidden;
   background-color:#ba9ea7;
 }
-
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -22,7 +27,6 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a.active {
   background-color: #f2acc2;
   color: white;
@@ -31,10 +35,38 @@ body {
 </head>
 <body>
 
-<div class="topnav">
+
+	<div class="w3-top">
+	  <div class="w3-bar w3-white w3-card" id="myNavbar" style="font-family: Raleway; line-height: 50px; font-size: 18px">
+	    <a href="index.html" class="w3-bar-item w3-button w3-wide" style="font-family: Raleway">Back to Self Care</a>
+	    <!-- Right-sided navbar links -->
+	    <div class="w3-right w3-hide-small">
+	      <a href="#" class="w3-bar-item w3-button nounderline" style="font-family: Raleway; line-height: 50px"><strong>Click on the screen to create bubbles!</strong></a>
+
+	    </div>
+	    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+	    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+	      <i class="fa fa-bars"></i>
+	    </a>
+	  </div>
+	</div>
+
+	<!-- Sidebar on small screens when clicking the menu icon -->
+	<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+	  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+	  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+	  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+	  <a href="chatbot.html" onclick="w3_close()" class="w3-bar-item w3-button">CHATBOT</a>
+	  <a href="Meditation.html" onclick="w3_close()" class="w3-bar-item w3-button">SELF CARE</a>
+	  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
+	</nav>
+
+
+<!-- <div class="topnav">
   <a class="active" href="trying.html">Home</a>
   <a href="#Positive Messages"> Click on the screen to create bubbles!</a>
-</div>
+</div> -->
 
 <div style="padding-left:10px">
 </div>
@@ -46,7 +78,6 @@ body {
 			background-color : #a3d2ff;
 		}
 		html, body {
-
 			overflow-x: hidden;
 			overflow-y: hidden;
 		}
@@ -55,7 +86,6 @@ body {
 			position : absolute;
 			border-radius : 50%;
 		}
-
 		</style>
 	</head>
 	<body>
@@ -150,7 +180,6 @@ body {
 		}
 		var before = Date.now();
 		var id = setInterval(frame, 5);
-
 		function frame()
 		{
 			var current = Date.now();
