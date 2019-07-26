@@ -1,0 +1,132 @@
+
+body > div{
+    border:1px solid grey;
+}
+html, body, #container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+#container {
+    overflow:hidden;
+    position:relative;
+}
+#hideMe {
+    -webkit-animation: cssAnimation 10s forwards;
+    animation: cssAnimation 10s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.f1 {
+  opacity: 1;
+  transition: 1s opacity;
+  text-align: center;
+}
+#f2 {
+  opacity: 1;
+  transition: 1s opacity;
+  text-align: center;
+}
+#breathing-button {
+    width: 270px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 1px solid #d1d1d1;
+    -webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+    font-size: 30px;
+    background: white;
+    color: grey;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 3px;
+    text-align: center;
+    }
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  25% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  60% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  100% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  25% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  60% {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  100% {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 100%;
+  left: 230%;
+  bottom:-180%;
+  transform: translate(-50%, -50%);
+  animation-duration: 6s;
+  float: center;
+}
+
+.w3-animate-opacity
+{animation:opac 2s}
+
+.centered2 {
+  position: absolute;
+  top: 100%;
+  left: 230%;
+  bottom:-180%;
+  transform: translate(-50%, -50%);
+  animation-duration: 6s;
+  float: center;
+}
+
+.w3-animate-opacity2
+{animation:opac 8s}
+
+.w3-animate-opacity3
+{animation:opac 30s}
+
+@keyframes opac{from{opacity:0} to{opacity:1}}
