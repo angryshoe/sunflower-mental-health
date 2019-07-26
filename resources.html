@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
 <head>
@@ -9,13 +9,54 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+<br>
+<br>
+
+  <a href="Meditation.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="relax.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Bubble Fun</p>
+  </a>
+  <a href="motivation.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>Motivational Quotes</p>
+  </a>
+
+
+
+</nav>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
 body, html {
   height: 100%;
   line-height: 1.8;
 }
+
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -23,21 +64,26 @@ body, html {
   background-image: url("https://cdn.shopify.com/s/files/1/1878/0085/products/diy-paint-by-number-kit-for-adults-on-canvas-ocean-blue-sunset-clean-pbn_530x@2x.jpg?v=1563283767");
   min-height: 100%;
 }
+
 .bgimg-2 {
   background-position: center;
   background-size: cover;
   background-image: url("https://i0.wp.com/flowernifty.com/wp-content/uploads/images/sunflower-aesthetic-pictures-to-pin-on-pinterest-thepinsta-sunflower-flowers.jpg?fit=800%2C500&ssl=1");
   min-height: 100%;
 }
+
 .bgimg-3 {
   background-position: center;
   background-size: cover;
   background-image: url("https://cdn.shopify.com/s/files/1/1878/0085/products/diy-paint-by-number-kit-for-adults-on-canvas-ocean-blue-sunset-clean-pbn_530x@2x.jpg?v=1563283767");
   min-height: 25%;
 }
+
+
 .w3-bar .w3-button {
   padding: 16px;
 }
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .dropbtn {
@@ -48,6 +94,14 @@ body, html {
   border: none;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
 .image {
   opacity: 1;
   display: block;
@@ -56,6 +110,7 @@ body, html {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -66,18 +121,30 @@ body, html {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .container:hover .image {
   opacity: 0.3;
 }
+
 .container:hover .middle {
   opacity: 1;
 }
+
 .text {
   background-color: #4CAF50;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
+
+
+
+
+
+
+
+
+
 .image {
   opacity: 1;
   display: block;
@@ -86,6 +153,7 @@ body, html {
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -96,15 +164,37 @@ body, html {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .container:hover .image {
   opacity: 0.3;
 }
+
 .container:hover .middle {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .dropdown {
   position: relative;
+
 }
+
 .dropdown-content {
   display: none;
   position: relative;
@@ -114,46 +204,119 @@ body, html {
   padding: 12px 16px;
   z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
+
+
+
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
 }
-.sidenav a:hover {
-  color: #064579;
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0.5px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 1px;
+  border: 1px solid #888;
+  width: 80%;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 body,h1,h2,h3,h4,h5,h6,p {font-family: "Raleway", sans-serif}
+
 body, html {
   height: 100%;
   line-height: 1.8;
 }
+
+
+
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
+
+
+
+
 /* Dropdown for menu */
+
+
+
+
+
+
 </style>
 </head>
 
@@ -306,6 +469,19 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding:64px 16px" id="gettinghelp">
   <h3 class="w3-center">Mental Illnesses</h3>
   <p class="w3-center w3-large"> According to MedlinePlus, mental disorders are 'conditions that affect your thinking, feeling, mood, or behavior.' About 1 in 5 adults, or 20%, experience mental illnesses in a given year. This same percentage of teens experience a mental health condition between the ages of 13-18. The prevalence of mental illness in our society has only emphasized the need for mental health awareness. Hover below the following images to see the dangerous mental illnesses affecting teens and adults today. </p>
+
+
+  <div class="dropdown2">
+   <button class="dropbtn">Menu</button>
+   <div class="dropdown-content2">
+     <a href="#anxiety">Anxiety</a>
+     <a href="#depression">Depression</a>
+     <a href="#academicpressure">Academic Pressure</a>
+   </div>
+ </div>
+
+
+
 </div>
 
 
@@ -474,8 +650,47 @@ body, html {
   </div>
 </div>
 
-<div class="w3-container w3-light-grey" style="padding:20px 16px" id="about">
-  <h3 class="w3-center">Eating Disorders</h3>
+<div class="w3-container w3-light-grey" style="padding:20px 16px" id="eatingdisorders">
+  <h3 class="w3-center" style="color:#1e4f4f; font-size: 40px"><strong>Eating Disorders</strong></h3>
+
+
+    <p>Eating Disorder is a serious condition related to eating behaviors that negatively impact health, emotions and the ability to function in important areas of life.</p>
+    <p> Eating disorder often develop in teens and young adults years, but it can develop at other ages.</p>
+
+    <p>The main cause of eating disorder is focusing too much on weight, body shape and food.</p>
+    <p> Symptoms vary depending on the type of eating disorder.</p>
+
+    <center><button id="myBtn">Types of Eating Disorders</button>
+    </center><div id="myModal" class="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <center><h3>Anorexia Nervosa</h3></center>
+        <p>This eating disorder is characterized by abnormal low weight or intense fear of gaining weight. People with anorexia try to control their weight and body shape by extreme measure. For example, vomiting after eating and excessive exercise.</p>
+        <center><h3>Bulimia Nervosa</h3></center>
+        <p>People who have Bulimia have frequent episodes of binge eating and purging. They also limit eating during the day which will lead to more binge eating and purging. Basically, people who have this eating disorder will eat a lot in a short amount of time and try to get rid of the gain calories in an unhealthy way. People who have Bulima is probably preoccupied with their weight, shape, and also judged them harshly by their physical flaws.</p>
+        <center><h3>Binge eating disorder</h3></center>
+        <p>People who binge eat eat a lot. People who has this eating disorder eat quickly or eat a lot even if they are not hungry or being uncomfortabely full. After binge eating, they will not purge, but be ashamed of their eating habits. Being ashamed will lead to them eating in secret.</p>
+        <center><h3>Rumination Disorder</h3></center>
+        <p>The person who has Rumination persistently and repeatedly regugitate food after eating, but this eating disorder is not caused by anxoeria or bulimia. Sometimes food is rechewed, reswallowed, or spit out. Some people who has this eating disorder will spit out the food or eat less to avoid vomiting the food. However, this will lead to malnutrient. This is common in infancy. </p>
+        <center><h3>Avoidant/Restrictive food intake Disorder</h3></center>
+        <p>People who has this eating disorder fail to meet their minimum daily nutrient because of three reasons. First, they are not interested in eating. Second, they avoid food with certain characteristics such as color or smell. For the third and the last reason, they avoid eating for fear of choking or for other consequences of eating. This eating disorder's consequences are significant weight loss or failure to gain weight in childhood.</p>
+      </div>
+      </div>
+
+      <h2>When to get help for yourself or a loved one</h2>
+      <p>You should be getting help if you or a loved one is showing these symptoms: </p>
+      <p>Skipping meals or making excuses for not eating</p>
+      <p>eating much more food in a meal or snack than what is considered normal</p>
+      <p>Excessive exercise</p>
+      <p>expressing depression, disgust, shame or guilt about eating habit</p>
+      <p>eating in secret</p>
+
+  <u><center><h1>Credits</h1></u>
+  <p>All of the information displayed on this website comes from Mayo Clinic.</p>
+  <button><a href="https://www.mayoclinic.org/diseases-conditions/eating-disorders/symptoms-causes/syc-20353603">Eating Disorder Information</a></button></center>
+
+
 </div>
 
 
@@ -493,117 +708,28 @@ body, html {
 
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
 }
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 0.5px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 1px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-</style>
-</head>
-  <center><h1><i>What is Eating Disorder?</i></h1></center>
-  <p>Eating Disorder is a serious condition related to eating behaviors that negatively impact health, emotions and the ability to function in important areas of life.</p>
-  <p> Eating disorder often develop in teens and young adults years, but it can develop at other ages.</p>
-
-  <p>The main cause of eating disorder is focusing too much on weight, body shape and food.</p>
-  <p> Symptoms vary depending on the type of eating disorder.</p>
-
-  <center><button id="myBtn">Types of Eating Disorders</button>
-  </center><div id="myModal" class="modal">
-
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <center><h3>Anorexia Nervosa</h3></center>
-      <p>This eating disorder is characterized by abnormal low weight or intense fear of gaining weight. People with anorexia try to control their weight and body shape by extreme measure. For example, vomiting after eating and excessive exercise.</p>
-      <center><h3>Bulimia Nervosa</h3></center>
-      <p>People who have Bulimia have frequent episodes of binge eating and purging. They also limit eating during the day which will lead to more binge eating and purging. Basically, people who have this eating disorder will eat a lot in a short amount of time and try to get rid of the gain calories in an unhealthy way. People who have Bulima is probably preoccupied with their weight, shape, and also judged them harshly by their physical flaws.</p>
-      <center><h3>Binge eating disorder</h3></center>
-      <p>People who binge eat eat a lot. People who has this eating disorder eat quickly or eat a lot even if they are not hungry or being uncomfortabely full. After binge eating, they will not purge, but be ashamed of their eating habits. Being ashamed will lead to them eating in secret.</p>
-      <center><h3>Rumination Disorder</h3></center>
-      <p>The person who has Rumination persistently and repeatedly regugitate food after eating, but this eating disorder is not caused by anxoeria or bulimia. Sometimes food is rechewed, reswallowed, or spit out. Some people who has this eating disorder will spit out the food or eat less to avoid vomiting the food. However, this will lead to malnutrient. This is common in infancy. </p>
-      <center><h3>Avoidant/Restrictive food intake Disorder</h3></center>
-      <p>People who has this eating disorder fail to meet their minimum daily nutrient because of three reasons. First, they are not interested in eating. Second, they avoid food with certain characteristics such as color or smell. For the third and the last reason, they avoid eating for fear of choking or for other consequences of eating. This eating disorder's consequences are significant weight loss or failure to gain weight in childhood.</p>
-    </div>
-    </div>
-
-    <h2>When to get help for yourself or a loved one</h2>
-    <p>You should be getting help if you or a loved one is showing these symptoms: </p>
-    <p>Skipping meals or making excuses for not eating</p>
-    <p>eating much more food in a meal or snack than what is considered normal</p>
-    <p>Excessive exercise</p>
-    <p>expressing depression, disgust, shame or guilt about eating habit</p>
-    <p>eating in secret</p>
-
-<u><center><h1>Credits</h1></u>
-<p>All of the information displayed on this website comes from Mayo Clinic.</p>
-<button><a href="https://www.mayoclinic.org/diseases-conditions/eating-disorders/symptoms-causes/syc-20353603">Eating Disorder Information</a></button></center>
-
-  <script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  // When the user clicks the button, open the modal
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  </script>
 
 </body>
 </html>
