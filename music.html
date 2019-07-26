@@ -1,0 +1,122 @@
+<html>
+<head>
+  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body align = "center">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index" class="w3-bar-item w3-button w3-wide">LOGO</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="aboutus.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="chatbot.html" class="w3-bar-item w3-button">CHATBOT</a>
+        <a href="meditation.html" class="w3-bar-item w3-button">SELFCARE</a>
+        <a href="resources.html" class="w3-bar-item w3-button">RESOURCES</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+	<i class="fa fa-bars"></i>
+</a>
+</div>
+<br>
+<br>
+<br>
+<div class = "headr" id = "headr"> <!--KAYA description-->
+  <h3 style = "font-size:40px; color: white">MUSIC</h3>
+</div>
+<div class = "descript" id = "descript">
+  <p align = "center" style = "color:black; font-size: 25px; font-family: 'Roboto', sans-serif;">This section offers a variety of relaxing, calming music.</p>
+</div>
+<div id = "container">
+  <div class = "description" id = "one">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Pleasant Relaxation</p>
+    <p class = "caption">Brief Meditation</p>
+    <audio controls>
+    <source src="audioOne.mp3" type="audio/mp3">
+    <source src="audioOne.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioOne.jpg" height="200" class = "image">
+    </div>
+  <div class = "description" id = "two">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Relaxing Piano</p>
+    <p class = "caption">Sean Beeson - The Path</p>
+    <audio controls>
+    <source src="audioTwo.mp3" type="audio/mp3">
+    <source src="audioTwo.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioTwo.jpg" height="200" class = "image">
+  </div>
+  <div class = "description" id = "three">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Upbeat Acoustic</p>
+    <p class = "caption">Yutaka Hirasaka - Breathing</p>
+    <audio controls>
+    <source src="audioThree.mp3" type="audio/mp3">
+    <source src="audioThree.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioThree.jpg" height="200" class = "image">
+  </div>
+</div>
+<div id = "container2">
+  <!-- <br> </br> -->
+  <div class = "description" id = "four">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Rain Sounds</p>
+    <p class = "caption">To help you sleep.</p>
+    <audio controls>
+    <source src="audioFour.mp3" type="audio/mp3">
+    <source src="audioFour.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioFour.jpg" height="200" class = "image">
+    </div>
+  <div class = "description" id = "five">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Inspiring Piano</p>
+    <p class = "caption">Deemo - Paper Plane's Adventure</p>
+    <audio controls>
+    <source src="audioFive.mp3" type="audio/mp3">
+    <source src="audioFive.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioFive.jpg" height="200" class = "image">
+  </div>
+  <div class = "description" id = "six">
+    <p style = "line-height:1.2; font-family: 'Raleway', sans-serif">Relaxing Acoustic</p>
+    <p class = "caption">Paniyolo - Color</p>
+    <audio controls>
+    <source src="audioSix.mp3" type="audio/mp3">
+    <source src="audioSix.ogg" type="audio/ogg">
+    </audio>
+    <br></br>
+    <img src = "audioSix.jpg" class = "image">
+  </div>
+</div>
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar"> <!--sidebar-->
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="chatbot.html" onclick="w3_close()" class="w3-bar-item w3-button">CHATBOT</a>
+  <a href="meditation.html" onclick="w3_close()" class="w3-bar-item w3-button">SELF CARE</a>
+  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
+</nav>
+</body>
+</html>
+<!-- jquery for enter key press -->
+<script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+<script src = "chatbot.js"></script>
