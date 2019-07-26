@@ -14,41 +14,11 @@ meta charset="UTF-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-<br>
-<br>
-
-  <a href="Meditation.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="relax.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>Bubble Fun</p>
-  </a>
-  <a href="motivation.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Motivational Quotes</p>
-  </a>
 
 
 
-</nav>
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -97,6 +67,13 @@ body, html {
 
 
 
+
+
+div.shift {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
 
 
 
@@ -262,7 +239,7 @@ body, html {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 1px; /* Location of the box */
+  padding-top: 0.5px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -310,8 +287,55 @@ body, html {
 
 
 
-/* Dropdown for menu */
+/* The side navigation menu */
+.sidenav2 {
+ height: 100%; /* 100% Full-height */
+ width: 0; /* 0 width - change this with JavaScript */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Stay on top */
+ top: 0; /* Stay at the top */
+ left: 0;
+ background-color: #111; /* Black*/
+ overflow-x: hidden; /* Disable horizontal scroll */
+ padding-top: 60px; /* Place content 60px from the top */
+ transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
+/* The navigation menu links */
+.sidenav2 a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #818181;
+ display: block;
+ transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav2 a:hover {
+ color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav2 .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+ transition: margin-left .5s;
+ padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+ .sidenav2 {padding-top: 15px;}
+ .sidenav2 a {font-size: 18px;}
+}
 
 
 
@@ -321,6 +345,20 @@ body, html {
 </head>
 
 <body>
+
+
+
+
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+
+
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -351,6 +389,17 @@ body, html {
   <a href="meditation.html" onclick="w3_close()" class="w3-bar-item w3-button">SELF CARE</a>
   <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -477,7 +526,6 @@ body, html {
      <a href="#anxiety">Anxiety</a>
      <a href="#depression">Depression</a>
      <a href="#academicpressure">Academic Pressure</a>
-								   
    </div>
  </div>
 
@@ -534,7 +582,7 @@ body, html {
       <p>Most people face stress daily. Most of the stress comes from school. The stress varies with what level of schooling students are in varying from elementary school to college.</p>
       <br>
       <center><h2>Stress that Elementary School Students have</h2></center>
-      <p> The clauses of stress are: </p>
+      <center><p> The clauses of stress are: </p></center>
 
       <table class="w3-table-all">
         <tr>
@@ -559,7 +607,7 @@ body, html {
     </div>
     <br>
     <center><h2>Stress that Middle School Students have</h2></center>
-    <p> The clauses of stress are: </p>
+    <center><p> The clauses of stress are: </p></center>
     <table class="w3-table-all">
       <tr>
       </tr>
@@ -582,7 +630,7 @@ body, html {
     <p> substance abuse </p></center>
     <br>
     <center><h2>Stress that High School Students have</h2></center>
-    <p> The clauses of stress are: </p>
+    <center><p> The clauses of stress are: </p></center>
     <table class="w3-table-all">
       <tr>
       </tr>
@@ -605,7 +653,7 @@ body, html {
     <p> cutting classes</p></center>
     <br>
     <center><h2>Stress that College Students have</h2></center>
-    <p> The clauses of stress are: </p>
+    <center><p> The clauses of stress are: </p></center>
     <table class="w3-table-all">
       <tr>
       </tr>
@@ -701,9 +749,7 @@ body, html {
 
 </div>
 </div>
-
-
-
+</div>
 
 
 
