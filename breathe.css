@@ -1,8 +1,14 @@
 
 body > div{
-    border:1px solid grey;
+    /* border:1px solid grey; */
 }
 html, body, #container {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+html, body, #container2 {
     height:100%;
     width:100%;
     margin:0;
@@ -13,8 +19,16 @@ html, body, #container {
     position:relative;
 }
 #hideMe {
-    -webkit-animation: cssAnimation 10s forwards;
-    animation: cssAnimation 10s forwards;
+    -webkit-animation: cssAnimation 30s forwards;
+    animation: cssAnimation 30s forwards;
+}
+#container2 {
+    overflow:hidden;
+    position:relative;
+}
+#hideMe2 {
+    -webkit-animation: cssAnimation 80s forwards;
+    animation: cssAnimation 80s forwards;
 }
 @keyframes cssAnimation {
     0%   {opacity: 1;}
@@ -106,12 +120,12 @@ html, body, #container {
   left: 230%;
   bottom:-180%;
   transform: translate(-50%, -50%);
-  animation-duration: 6s;
+  animation-duration: 3s;
   float: center;
 }
 
 .w3-animate-opacity
-{animation:opac 2s}
+{animation:opac 3s}
 
 .centered2 {
   position: absolute;
@@ -119,14 +133,14 @@ html, body, #container {
   left: 230%;
   bottom:-180%;
   transform: translate(-50%, -50%);
-  animation-duration: 6s;
+  animation-duration: 3s;
   float: center;
 }
 
 .w3-animate-opacity2
-{animation:opac 8s}
+{animation:opac 10s}
 
 .w3-animate-opacity3
-{animation:opac 30s}
+{animation:opac 20s}
 
 @keyframes opac{from{opacity:0} to{opacity:1}}
