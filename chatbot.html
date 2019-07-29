@@ -39,14 +39,24 @@
 <div class = "description" id = "description">
   <p align = "left" style = "color:black; font-size: 25px;">Below is our support chatbot, KAYA. KAYA offers advice depending on a decision tree displayed at the beginning of your interactions with her, and her main function is to chat with you.</p>
 </div>
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar"> <!--sidebar-->
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="chatbot.html" onclick="w3_close()" class="w3-bar-item w3-button">CHATBOT</a>
-  <a href="Meditation.html" onclick="w3_close()" class="w3-bar-item w3-button">SELF CARE</a>
-  <a href="resources.html" onclick="w3_close()" class="w3-bar-item w3-button">RESOURCES</a>
-</nav>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" style="line-height:50px" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button" id="navigationtitle">HOME</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button" id="navigationtitle">ABOUT</a>
+      <a href="chatbot.html" class="w3-bar-item w3-button" id="navigationtitle">CHATBOT</a>
+      <a href="meditation.html" class="w3-bar-item w3-button" id="navigationtitle">SELFCARE</a>
+      <a href="resources.html" class="w3-bar-item w3-button" id="navigationtitle">RESOURCES</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 <div id = "bot" class = "bot">
   <style>
   .bot {
