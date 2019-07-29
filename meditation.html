@@ -1,5 +1,9 @@
 <html>
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+  #navigationtitle{font-family: "Raleway", sans-serif; font-size: 18px;}
+  </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <meta name="viewport" content="w=th=device-width, initial-scale=1">
@@ -9,15 +13,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar w3-black w3-card" style="line-height:50px" id="myNavbar">
     <a href="index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-      <a href="aboutus.html" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="chatbot.html" class="w3-bar-item w3-button">CHATBOT</a>
-      <a href="meditation.html" class="w3-bar-item w3-button">SELFCARE</a>
-      <a href="resources.html" class="w3-bar-item w3-button">RESOURCES</a>
+      <a href="index.html" class="w3-bar-item w3-button" id="navigationtitle">HOME</a>
+      <a href="aboutus.html" class="w3-bar-item w3-button" id="navigationtitle">ABOUT</a>
+      <a href="chatbot.html" class="w3-bar-item w3-button" id="navigationtitle">CHATBOT</a>
+      <a href="meditation.html" class="w3-bar-item w3-button" id="navigationtitle">SELFCARE</a>
+      <a href="resources.html" class="w3-bar-item w3-button" id="navigationtitle">RESOURCES</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -28,19 +32,16 @@
 </div>
 <body>
   <style>
-
   .container {
     position: relative;
     width: 100%;
     max-width: 200px;
   }
-
   .image {
     display: block;
     width: 100%;
     height: auto;
   }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -53,11 +54,9 @@
     transition: .3s ease;
     background-color: grey;
   }
-
   .container:hover .overlay {
     opacity: 1;
   }
-
   .icon {
     color: white;
     font-size: 100px;
@@ -68,7 +67,6 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-
   .fa-user:hover {
     color: #eee;
   }
@@ -87,9 +85,8 @@
 
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Mediation</a>
-    <a href="#contact" class="w3-bar-item w3-button">Positive Reinforcement</a>
+
+
   </div>
 </header>
 
@@ -157,10 +154,7 @@
       <div class="overlay2">
         <a href="#"class="icon2">
           <i class="fa fa-smile-o"></i>
-
          </div>
-
-
           <div class="container4 img2 ex1">
             <img src="https://www.freeiconspng.com/uploads/video-camera-png-icon-5.png"class="image3">
             <div class="overlay3">
@@ -174,4 +168,3 @@
 
 </body>
 </html>
-
