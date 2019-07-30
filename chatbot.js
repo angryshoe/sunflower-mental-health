@@ -10,7 +10,7 @@ var optionThree;
 var itBeLikeThat;
 var response;
 var responsesOne = ["<h1>It's never a bad idea to focus on the positive<h1>", "<h1>I'm so glad you're here to talk to m<h1>", "<h1>yeet<h1>", "<h1>Aw, really?<h1>", "<h1>Thanks for opening up!<h1>", "<h1>I can see where you're coming from<h1>"];
-var responsesTwo = ["<h1>Your feelings are valid!<h1>", "<h1>That's pretty interesting!<h1>", "<h1>I'll always be here.<h1>","<h1>Thanks for saying that!<h1>", "<h1>I hear you<h1>", "I'll have to think about that<h1>"];
+var responsesTwo = ["<h1>Your feelings are valid!<h1>", "<h1>That's pretty interesting!<h1>", "<h1>I'll always be here.<h1>","<h1>Thanks for saying that!<h1>", "<h1>I hear you<h1>", "<h1>I'll have to think about that<h1>"];
 var responsesThree = ["<h1>Take care of yourself<h1>", "<h1>Wow.<h1>", "<h1>How are you feeling?<h1>", "<h1>You aren't alone.<h1>", "<h1>I hear you<h1>", "<h1>Maybe so<h1>", "<h1>I appreciate you talking to me<h1>"];
 var lifeCheck;
 var lifeCheckTwo;
