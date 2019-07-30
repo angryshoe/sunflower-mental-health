@@ -81,6 +81,7 @@ function bot() {
         if (check != -1){
           output.innerHTML = "<h1>Oh no.<h1>";
           question = '<h1>Do you want to talk about it?<h1>';
+          document.getElementById("input").value = "";
           thinking();
           setTimeout(timedQuestion,2250);
         }
@@ -116,18 +117,21 @@ function bot() {
       }
       else if ((questionNum >= 4) && (questionNum % 3 == 0)) {
         var randomAns = responsesOne[Math.floor(Math.random()*responsesOne.length)];
+        document.getElementById("input").value = "";
         question = randomAns;
         thinking();
         setTimeout(timedQuestion,2250);
       }
       else if ((questionNum >= 4) && (questionNum % 3 == 1)) {
         var randomAns = responsesTwo[Math.floor(Math.random()*responsesTwo.length)];
+        document.getElementById("input").value = "";
         question = randomAns;
         thinking();
         setTimeout(timedQuestion,2250);
       }
       else if ((questionNum >= 4) && (questionNum % 3 == 2)) {
         var randomAns = responsesThree[Math.floor(Math.random()*responsesThree.length)];
+        document.getElementById("input").value = "";
         question = randomAns;
         thinking();
         setTimeout(timedQuestion, 2250);
