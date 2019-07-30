@@ -86,7 +86,7 @@ function bot() {
         }
         if (checkTwo != -1){
             output.innerHTML = "<h1>Glad to hear that!<h1>";
-            question = 'responsesOne';
+            question = responsesOne;
             thinking();
             setTimeout(timedQuestion, 2250);
           }
